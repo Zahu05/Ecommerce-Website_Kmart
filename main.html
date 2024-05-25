@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>K-mart</title>
+  <link rel="icon" type="image/x-icon" href="img/K-mart.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="forZ.css">
+</head>
+
+<body onload="showSlides();">
+  <header>
+    <a href="main.html"><img src="img/K-mart.jpg" height='100px' width="100px" style="border-radius: 50%;"
+        align="left"></a>
+    <p style="font-family:cursive; font-size:50px; color:black;text-align:left;vertical-align: middle; "><b>K-mart</b>
+    </p><br>
+    <nav style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <img src="img/clothes.jpg" height="80px" width="80px" style="border-radius: 50%;">
+        <a href="clothes.html"
+          style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-weight: bolder;font-size: 25px;">Clothes</a>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <img src="img/acc.jpeg" height="80px" width="80px" style="border-radius: 50%;">
+        <a href="accessories.html"
+          style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-weight: bolder;font-size: 25px;">Accessories</a>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <img src="img/accessories.jpg" height="80px" width="80px" style="border-radius: 50%;">
+        <a href="k-collective.html"
+          style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-weight: bolder;font-size: 25px;">K-collective</a>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <img src="img/beautybar.png" height="80px" width="80px" style="border-radius: 50%;">
+        <a href="beautybar.html"
+          style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-weight: bolder;font-size: 25px;">Beautybar</a>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <img src="img/seoulful.jpg" height="80px" width="80px" style="border-radius: 50%;">
+        <a href="seoulful.html"
+          style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-weight: bolder;font-size: 25px;">SeoulFul</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <section>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 10</div>
+        <img src="img/c2.jpeg" style="width:100%;">
+        <div class="text">Clothes</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 10</div>
+        <img src="img/c5.jpeg" style="width:100%">
+        <div class="text">Clothes</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 10</div>
+        <img src="img/a2.jpeg" style="width:100%">
+        <div class="text" style="color:white">Accessories</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 10</div>
+        <img src="img/a5.jpeg" style="width:100%">
+        <div class="text">Accessories</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5/ 10</div>
+        <img src="img/b1.jpeg" style="width:100%">
+        <div class="text">Beautybar</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 10</div>
+        <img src="img/b2.jpeg" style="width:100%">
+        <div class="text">Beautybar</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 10</div>
+        <img src="img/k1.jpeg" style="width:100%">
+        <div class="text" style="color: white;">softToys</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 10</div>
+        <img src="img/k2.jpeg" style="width:100%">
+        <div class="text">SoftToys</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">9 / 10</div>
+        <img src="img/f1.png" style="width:100%;">
+        <div class="text">Food</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10 / 10</div>
+        <img src="img/f2.jpeg" style="width:100%">
+        <div class="text">Food</div>
+      </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </section>
+  <div class="trendingnow">
+    <h1><b>Trending Now</b></h1>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <section id="product1" class="section-p1">
+            <div class="pro-container swipe">
+              <div class="pro">
+                <div class="card-wrapper swiper-wrapper">
+                  <div class="card swiper-slider">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <img src="img/tn1.jpeg" alt="">
+                      <div class="des">
+                        <span>ZARA </span>
+                        <h5>Shirt & Jeans</h5>
+
+                        <h4>₹4999</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section id="product1" class="section-p1">
+            <div class="pro-container swipe">
+              <div class="pro">
+                <div class="card-wrapper swiper-wrapper">
+                  <div class="card swiper-slider">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <img src="img/tn2.jpeg" alt="">
+                      <div class="des">
+                        <span>PRADA</span>
+                        <h5>ONE-PIECE</h5>
+
+                        <h4>₹3000</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section id="product1" class="section-p1">
+            <div class="pro-container swipe">
+              <div class="pro">
+                <div class="card-wrapper swiper-wrapper">
+                  <div class="card swiper-slider">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <img src="img/tn9.jpeg" alt="">
+                      <div class="des">
+                        <span>GUCCI</span>
+                        <h5>FORMALS</h5>
+
+                        <h4>₹5000</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section id="product1" class="section-p1">
+            <div class="pro-container swipe">
+              <div class="pro">
+                <div class="card-wrapper swiper-wrapper">
+                  <div class="card swiper-slider">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <img src="img/tn3.jpeg" alt="">
+                      <div class="des">
+                        <span>KYE</span>
+                        <h5>HAIR Accessories</h5>
+
+                        <h4>₹1499</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section id="product1" class="section-p1">
+            <div class="pro-container swipe">
+              <div class="pro">
+                <div class="card-wrapper swiper-wrapper">
+                  <div class="card swiper-slider">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <img src="img/tn4.jpeg" alt="">
+                      <div class="des">
+                        <span>SOFFY-COFFY</span>
+                        <h5>TEDDY</h5>
+
+                        <h4>₹999</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section id="product1" class="section-p1">
+            <div class="pro-container swipe">
+              <div class="pro">
+                <div class="card-wrapper swiper-wrapper">
+                  <div class="card swiper-slider">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <img src="img/tn5.jpeg" alt="">
+                      <div class="des">
+                        <span>OLIVEYOUNG</span>
+                        <h5>BLUSH</h5>
+
+                        <h4>₹2499</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section id="product1" class="section-p1">
+            <div class="pro-container swipe">
+              <div class="pro">
+                <div class="card-wrapper swiper-wrapper">
+                  <div class="card swiper-slider">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <img src="img/tn6.jpeg" alt="">
+                      <div class="des">
+                        <span>FOODY</span>
+                        <h5>GLASS NOODLES</h5>
+
+                        <h4>₹499</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section id="product1" class="section-p1">
+            <div class="pro-container swipe">
+              <div class="pro">
+                <div class="card-wrapper swiper-wrapper">
+                  <div class="card swiper-slider">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <img src="img/tn7.jpeg" alt="">
+                      <div class="des">
+                        <span>CHARM</span>
+                        <h5>MOISTURISER</h5>
+
+                        <h4>₹3000</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section id="product1" class="section-p1">
+            <div class="pro-container swipe">
+              <div class="pro">
+                <div class="card-wrapper swiper-wrapper">
+                  <div class="card swiper-slider">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <img src="img/tn8.jpeg" alt="">
+                      <div class="des">
+                        <span>ETUDE HOUSE</span>
+                        <h5>BUTTERFLY-BAND</h5>
+
+                        <h4>₹1890</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#"><i class="fa-regular fa-cart-shopping cart"></i></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </div>
+  <script>
+    // Available countries
+    var availableCountries = [
+      "United States",
+      "INDIA",
+      "United Kingdom",
+      "Australia",
+      "Germany",
+      "France",
+      "Spain",
+      "Japan",
+      "Korea",
+      // Add more countries as needed
+    ];
+
+    // Available brands
+    var availableBrands = [
+      "ETUDE HOUSE",
+      "OLIVEYOUNG",
+      "GUCCI",
+      "ZARA",
+      "H&M",
+      "PRADA",
+      "CHARM",
+      "KAIKO",
+      "KYE",
+      // Add more brands as needed
+    ];
+  </script>
+  <div class="footer">
+    <p>&copy; 2023 K-mart</p>
+    <p>
+      <a href="/">Home</a> |
+      <a href="/about">About Us</a> |
+      <a href="/contact">Contact</a>
+    </p>
+    <p>Contact: contact@yourwebsite.com</p>
+    <p id="countries"></p>
+    <p id="brands"></p>
+  </div>
+
+  <script>
+    // Function to display lists
+    function displayLists() {
+      var countriesList = availableCountries.join(', ');
+      var brandsList = availableBrands.join(', ');
+
+      document.getElementById('countries').textContent = 'Available Countries: ' + countriesList;
+      document.getElementById('brands').textContent = 'Available Brands: ' + brandsList;
+    }
+
+    // Call the function to display lists
+    displayLists();
+  </script>
+</body>
+
+</html>
